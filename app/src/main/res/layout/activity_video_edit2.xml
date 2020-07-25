@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.zcc.nowatermark.Activity.VideoEditActivity">
+<com.zcc.nowatermark.widget.TitleBar
+    android:id="@+id/title"
+    android:layout_width="match_parent"
+    android:layout_height="45dp"/>
+    <SurfaceView
+        android:id="@+id/surface"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_centerVertical="true"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"/>
+    <SeekBar
+        android:id="@+id/seekbar"
+        android:layout_margin="20dp"
+        android:layout_below="@+id/surface"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"/>
+    <Button
+        android:id="@+id/bt_submit"
+        android:text="提交"
+        android:textColor="@color/white"
+        android:background="@drawable/btn_red_normal"
+        android:layout_margin="@dimen/dp30"
+        android:visibility="gone"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"/>
+    <com.zcc.nowatermark.widget.MCustomZoomView
+        android:layout_below="@+id/title"
+        android:layout_above="@+id/seekbar"
+        android:id="@+id/zoomView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</RelativeLayout>

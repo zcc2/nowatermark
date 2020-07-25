@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    <RelativeLayout
+        android:id="@+id/rl_title"
+        android:layout_width="match_parent"
+        android:background="#2B2F38"
+        android:visibility="gone"
+        android:layout_height="50dp">
+        <ImageView
+            android:id="@+id/img_back"
+            android:src="@mipmap/ic_back_w"
+            android:layout_width="50dp"
+            android:scaleType="centerInside"
+            android:gravity="center_vertical"
+            android:layout_centerVertical="true"
+            android:layout_height="match_parent" />
+        <TextView
+            android:layout_toRightOf="@+id/img_back"
+            android:id="@+id/tv_left_text"
+            android:paddingLeft="@dimen/dp10"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+    </RelativeLayout>
+        <TextView
+            android:drawableTop="@drawable/ic_error_page"
+            android:gravity="center"
+            android:id="@+id/failView"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:text="加载失败，点击重试"
+            android:textSize="14sp"
+            android:padding="6dp"
+            android:textColor="#666666" />
+    <TextView
+        android:id="@+id/emptyView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="14sp"
+        android:visibility="gone"
+        android:padding="6dp"
+        android:textColor="#666666"
+        android:drawableTop="@drawable/ic_empty_page"
+        android:text="暂无数据"
+        android:layout_gravity="center"/>
+
+    <ProgressBar
+        android:id="@+id/loadingView"
+        style="@android:style/Widget.ProgressBar"
+        android:indeterminateDrawable="@drawable/progress_medium_white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"/>
+</FrameLayout>

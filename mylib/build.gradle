@@ -1,0 +1,57 @@
+apply plugin: 'com.android.library'
+
+
+android {
+    compileSdkVersion 27
+    //buildToolsVersion '26.0.2'
+    defaultConfig {
+        minSdkVersion 15
+        targetSdkVersion 27
+        versionCode 1
+        versionName "1.0"
+        multiDexEnabled true
+        multiDexKeepProguard file('multidex.pro')
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    api fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestImplementation('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    //noinspection GradleCompatible
+    api 'com.android.support:appcompat-v7:27.1.1'
+    testImplementation 'junit:junit:4.12'
+    //分包处理
+    api 'com.android.support:multidex:1.0.2'
+    //net的框架
+    api 'io.reactivex:rxandroid:1.2.1'
+    api 'io.reactivex:rxjava:1.1.6'
+    api 'com.squareup.retrofit2:retrofit:2.1.0'
+    api 'com.squareup.retrofit2:converter-gson:2.1.0'
+    api 'com.squareup.retrofit2:converter-scalars:2.1.0'
+    api 'com.squareup.retrofit2:adapter-rxjava:2.1.0'
+    api 'com.squareup.okhttp3:logging-interceptor:3.4.0-RC1'
+    //控件点击事件
+    api 'com.jakewharton.rxbinding:rxbinding:0.4.0'
+    //权限处理
+    api 'com.yanzhenjie:permission:2.0.0-rc4'
+    //    api 'com.alibaba:fastjson:1.2.49'
+    api 'com.android.support:cardview-v7:27.1.1'
+    //刷新
+    api 'com.scwang.smartrefresh:SmartRefreshLayout:1.0.5.1'
+    api 'com.android.support:recyclerview-v7:27.1.1'
+    api 'com.kaopiz:kprogresshud:1.1.0'
+//    api 'com.github.bumptech.glide:glide:3.7.0'
+}
+repositories {
+    mavenCentral()
+}

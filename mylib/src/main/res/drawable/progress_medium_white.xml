@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- 在这里面定义两个相反方向旋转的圈 -->
+
+    <!-- 定义一个从0转到360度的圈 -->
+    <item>
+        <rotate
+            android:fromDegrees="0"
+            android:toDegrees="360"
+            android:pivotX="50%"
+            android:pivotY="50%"
+            android:drawable="@drawable/spinner_big_inner"/>
+    </item>
+
+    <!-- 定义一个从360转到0度的圈 -->
+    <item>
+        <rotate
+            android:fromDegrees="360"
+            android:toDegrees="0"
+            android:pivotX="50%"
+            android:pivotY="50%"
+            android:drawable="@drawable/spinner_big_inner"/>
+    </item>
+</layer-list>

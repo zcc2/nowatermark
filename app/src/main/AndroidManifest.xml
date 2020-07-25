@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.zcc.nowatermark">
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <application
+        android:name="com.zcc.nowatermark.Application.MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.NoActionBar">
+        <activity android:name="com.zcc.nowatermark.Activity.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.zcc.nowatermark.Activity.EditActivity"></activity>
+        <activity android:name="com.zcc.nowatermark.Activity.MergeActivity"></activity>
+        <activity
+            android:name="com.zcc.nowatermark.Activity.VideoEditActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.zcc.nowatermark.pickvideo.VideoPickActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.zcc.nowatermark.pickvideo.AudioPickActivity"
+            android:screenOrientation="portrait" />
+    </application>
+
+</manifest>

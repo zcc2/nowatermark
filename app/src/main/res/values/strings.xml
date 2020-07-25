@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">去水印神器</string>
+    <string name="title_first">video</string>
+    <string name="title_my">我的</string>
+    <string name="time_cut">裁剪时长</string>
+    <string name="size_cut">尺寸裁剪</string>
+    <string name="compose">视频合成</string>
+    <string name="audio_dum">提取音频</string>
+    <string name="reverse">视频倒放</string>
+    <string name="speed">视频变速</string>
+    <string name="video_dum">提取视频</string>
+    <string name="image_to_video">图片转视频</string>
+    <string name="home_cut_tool">视频剪辑工具</string>
+    <string name="success">Saved Successfully</string>
+    <string name="choose_image">Image</string>
+    <string name="no_mark_error">Failed to remove the watermark, please re-adjust the position of the rectangle (please place the erasing frame in the video)</string>
+    <string name="compose_tips">Please select the same source video (videos from different sources will fail to merge)</string>
+</resources>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/tv_back"
+        android:background="#373B3E"
+        android:padding="5dp"
+        android:text="本地音乐"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:drawableLeft="@drawable/vw_ic_back"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_video_pick"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tv_back" />
+
+</RelativeLayout>

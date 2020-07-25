@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">MyLib</string>
+
+
+    <string name="msg_network_error">网络异常，请稍后重试</string>
+    <string name="msg_unknown_error">未知错误，请稍后重试</string>
+    <string name="msg_argument_error">参数错误</string>
+    <string name="defult_load_content">请稍后</string>
+
+</resources>
